@@ -2,9 +2,13 @@ import java.io.*;
 import java.util.*;
 
 
-class MergeSort{
+class MergeSort
+{
  
-   
+   	 public void sortMerge(int array[])
+	{
+		sortMerge(array, 0, array.length-1);
+	}
 	 public void sortMerge(int array[], int left, int right)
 	    {
 		 	Helper help = new Helper();
