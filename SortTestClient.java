@@ -1,16 +1,19 @@
 import Helper.java;
 import MergeSort.java;
 
-public class SortTestClient {
+public class SortTestClient 
+{
 	public static  void MergeSortTest()
 	{
 	MergeSort merging = new MergeSort();
 		Helper help = new Helper();
       
         WatchCheck timer0 = new WatchCheck();
-        try {
+        try 
+		{
 			Thread.sleep(1000);
-		} catch (InterruptedException e) {
+		} catch (InterruptedException e) 
+		{
 			
 		}
         double time0 = timer0.timing();
