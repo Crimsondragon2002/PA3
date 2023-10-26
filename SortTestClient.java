@@ -218,7 +218,7 @@ public class SortTestClient
         
         WatchCheck timer18 = new WatchCheck();
         merging.sortMerge(arraya6);
-        double time18 = timer10.timing();
+        double time18 = timer18.timing();
         System.out.println("The time it took to sort the ascending array 6 is " + time18 + " miliseconds");
         System.out.println("");
         
