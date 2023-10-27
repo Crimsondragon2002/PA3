@@ -5,7 +5,7 @@ import Helper.java;
 class MergeSort
 {
  
-   	 public void sortMerge(int array[])
+   	 public double sortMerge(int array[])
 	{
 		WatchCheck timeBase = new WatchCheck();
     	 	sortMerge(array, 0, array.length-1);
