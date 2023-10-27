@@ -7,7 +7,10 @@ class MergeSort
  
    	 public void sortMerge(int array[])
 	{
-		sortMerge(array, 0, array.length-1);
+		WatchCheck timeBase = new WatchCheck();
+    	 	sortMerge(array, 0, array.length-1);
+    	 	double timeSortBase = timeBase.timing();
+    	 	return timeSortBase;
 	}
 	 public void sortMerge(int array[], int left, int right)
 	    {
