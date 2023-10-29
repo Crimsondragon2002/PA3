@@ -1,15 +1,14 @@
-import java.io.*;
-import java.util.*;
-import Helper.java;
 
-class MergeSort
+class MergeSort extends Sort
+
 {
+	StopWatch timer = new StopWatch();
  
-   	 public double sortMerge(int array[])
+   	 public long sort(int array[])
 	{
-		WatchCheck timeBase = new WatchCheck();
+   		 	timer.WatchCheck();
     	 	sortMerge(array, 0, array.length-1);
-    	 	double timeSortBase = timeBase.timing();
+    	 	long timeSortBase = timer.timing();
     	 	return timeSortBase;
 	}
 	 public void sortMerge(int array[], int left, int right)
@@ -83,19 +82,9 @@ class MergeSort
             indexSecond++;
             indexThird++;
         }
-       
- 
-     
-        
+  
         
     }
  
   
- 
-    // Driver code
-    public static void main(String args[])
-    {
-    	
-
-    }
 }
