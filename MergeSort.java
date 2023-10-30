@@ -11,7 +11,7 @@ class MergeSort extends Sort
 	* Calls the function that sorts a given array using its length, and returns the time it takes to sort
 	* @param array[] - the array that is sorted
 	* @returns the time it takes for sorting to occur
-	/
+	*/
    	 public long sort(int array[])
 	{
    		 	timer.WatchCheck();
