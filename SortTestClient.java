@@ -1,3 +1,10 @@
+/**
+* Authors: Joshua Buscher and Muhammed-Sharif Adepetu
+* Project: Programming assignment 3- complexity and sorting
+* 
+* This method implements testing for the two sorting algorithms created, and allows for expermentation for the hypothesis that duplicate values affect the runtime of sorting algorthims to occur
+*/
+
 public class SortTestClient 
 {
 	
@@ -15,16 +22,26 @@ public class SortTestClient
 	
 
 	
-        
+
+/*
+* This starts the testing of the bubble sort algorithm
+*/        
 public static void BubbleSortTest(){
 	System.out.println("Testing Bubble Sort!! \n");
 	TestClient(bubble, "bubble sort");
 }
-
+/*
+*This starts the testign of the merge sort algorithm
+*/ 
 public static void MergeSortTest(){
 	System.out.println("Testing Merge Sort!! \n");
 	TestClient(merge, "merge sort");
 }
+/*
+*This tests the chosen sorting algorithm, and does experiments to check if using duplicate values affects runtime
+* @param SortType - the type of algorthim that is sorted
+* @param Sort - name of the algorithm type that the sorted algorthm belongs to
+*/
 public static void TestClient(Sort SortType, String Sort){
      
     
