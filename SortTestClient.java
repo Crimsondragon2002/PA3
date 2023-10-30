@@ -94,9 +94,9 @@ public static void TestClient(Sort SortType, String Sort){
     System.out.println("");
    
   
-    for(int i=1; i<7; i++) {
-    int Multiplyer=(int) Math.pow(i,2);
-    int elements = 2000*Multiplyer;
+    for(int i=0; i<6; i++) {
+    int Multiplyer=(int) Math.pow(2,i);
+    int elements = 8000*Multiplyer;
     
     int[] array1 = help.getMoreRandomArray(elements);
     double time = SortType.sort(array1);
