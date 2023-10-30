@@ -6,7 +6,7 @@
 class MergeSort extends Sort
 
 {
-	StopWatch timer = new StopWatch();
+	
  	/*
 	* Calls the function that sorts a given array using its length, and returns the time it takes to sort
 	* @param array[] - the array that is sorted
@@ -14,7 +14,7 @@ class MergeSort extends Sort
 	*/
    	 public long sort(int array[])
 	{
-   		 	timer.WatchCheck();
+   		WatchCheck timer = new WatchCheck();
     	 	sortMerge(array, 0, array.length-1);
     	 	long timeSortBase = timer.timing();
     	 	return timeSortBase;
