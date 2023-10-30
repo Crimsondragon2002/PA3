@@ -1,9 +1,17 @@
-
+/*
+* Author: Joshua Buscher
+* Project: Programming assignment 3- complexity and sorting
+* This method creates a merge sort algorithm for further testing and experimentation
+*/
 class MergeSort extends Sort
 
 {
 	StopWatch timer = new StopWatch();
- 
+ 	/*
+	* Calls the function that sorts a given array using its length, and returns the time it takes to sort
+	* @param array[] - the array that is sorted
+	* @returns the time it takes for sorting to occur
+	/
    	 public long sort(int array[])
 	{
    		 	timer.WatchCheck();
@@ -11,6 +19,12 @@ class MergeSort extends Sort
     	 	long timeSortBase = timer.timing();
     	 	return timeSortBase;
 	}
+	/*
+	* uses a merge sort algorithm to sort the given array
+	* @param array[] - the array to be sorted
+	* @param left - the left of the array to be sorted 
+	* @param right - the right of the array to be sorted
+	*/
 	 public void sortMerge(int array[], int left, int right)
 	    {
 		 	Helper help = new Helper();
@@ -29,7 +43,13 @@ class MergeSort extends Sort
 	        }
 	        
 	    }
-	 
+	 /*
+	* uses merges the parts of an array in order to sort it
+	* @param array[] - the array to be sorted
+	* @param left - the left of the array to be sorted 
+ 	* @param middle - the middle of the array to be sorted
+	* @param right - the right of the array to be sorted
+	*/
     public void merge(int array[], int left, int middle, int right)
     {
     	
