@@ -11,7 +11,7 @@ public class SortTestClient
 	static Sort merge = new MergeSort();
 	static Sort bubble = new BubbleSort();
 	static Helper help = new Helper();
-	StopWatch timer = new StopWatch();
+	
 	
     static int[] testDupAscend = help.getDupAscendingArray(50);
     static int[] testAscend = help.getAscendingArray(50);
@@ -95,34 +95,96 @@ public static void TestClient(Sort SortType, String Sort){
    
   
     for(int i=1; i<7; i++) {
-    int Multiplyer=(int) Math.pow(i,2);
-    int elements = 2000*Multiplyer;
-    
-    int[] array1 = help.getMoreRandomArray(elements);
-    double time = SortType.sort(array1);
-    System.out.println("Time taken for " + Sort + " to sort the duplicate random array with " + elements+ " elements: " + time + "microseconds");
+		    int Multiplyer=(int) Math.pow(i,2);
+		    if(i == 1 ) {
+		    	Multiplyer = 1;
+		    }
+		    else
+		    {
+		    	Multiplyer = 2*(i-1);
+		    
+		    }
+		    int elements = 2000*Multiplyer;
+		    int[] array1 = help.getMoreRandomArray(elements);
+		    double time = SortType.sort(array1);
+		    System.out.println("Time taken for " + Sort + " to sort the duplicate random array " + i + " with "  + elements+ " elements: " + time + " microseconds");
 
-    
-    int[] array2 = help.getLessRandomArray(elements); 
-    time = SortType.sort(array2);
-    System.out.println("Time taken for " + Sort + " to sort the random array with " + elements+ " elements: " + time + "microseconds");
-
-    int[] array3 = help.getAscendingArray(elements);
-    time = SortType.sort(array3);
-    System.out.println("Time taken for " + Sort + " to sort the ascending array with " + elements+ " elements: " + time + "microseconds");
-  
-    int[] array4 = help.getDescendingArray(elements);
-    time = SortType.sort(array4);
-    System.out.println("Time taken for " + Sort + " to sort the descending array with " + elements+ " elements: " + time + "microseconds");
-
-    int[] array5 = help.getDupAscendingArray(elements);
-    time = SortType.sort(array5);
-    System.out.println("Time taken for " + Sort + " to sort the ascending duplicate array with " + elements + " elements: " + time + "microseconds");
-
-    int[] array6 = help.getDupDescendingArray(elements);
-    time = SortType.sort(array6);
-    System.out.println("Time taken for " + Sort + " to sort the descending duplicate array with " + elements +  " elements: " + time + "microseconds");
-}
+	    }
+	    for(int i=1; i<7; i++) {
+		    int Multiplyer=(int) Math.pow(i,2);
+		    if(i == 1 ) {
+		    	Multiplyer = 1;
+		    }
+		    else
+		    {
+		    	Multiplyer = 2*(i-1);
+		    
+		    }
+		    int elements = 2000*Multiplyer;
+		    int[] array2 = help.getLessRandomArray(elements); 
+		    double time = SortType.sort(array2);
+		    System.out.println("Time taken for " + Sort + " to sort the random array " + i + " with "  + elements+ " elements: " + time + " microseconds");
+	    }
+	    for(int i=1; i<7; i++) {
+		    int Multiplyer=(int) Math.pow(i,2);
+		    if(i == 1 ) {
+		    	Multiplyer = 1;
+		    }
+		    else
+		    {
+		    	Multiplyer = 2*(i-1);
+		    
+		    }
+		    int elements = 2000*Multiplyer;
+		    int[] array3 = help.getAscendingArray(elements); 
+		    double time = SortType.sort(array3);
+		    System.out.println("Time taken for " + Sort + " to sort the ascending  array " + i + " with "  + elements+ " elements: " + time + " microseconds");
+	    }
+	    for(int i=1; i<7; i++) {
+		    int Multiplyer=(int) Math.pow(i,2);
+		    if(i == 1 ) {
+		    	Multiplyer = 1;
+		    }
+		    else
+		    {
+		    	Multiplyer = 2*(i-1);
+		    
+		    }
+		    int elements = 2000*Multiplyer;
+		    int[] array4 = help.getDupAscendingArray(elements); 
+		    double time = SortType.sort(array4);
+		    System.out.println("Time taken for " + Sort + " to sort the dup assending  array " + i + " with "  + elements+ " elements: " + time + " microseconds");
+	    }
+	    for(int i=1; i<7; i++) {
+		    int Multiplyer=(int) Math.pow(i,2);
+		    if(i == 1 ) {
+		    	Multiplyer = 1;
+		    }
+		    else
+		    {
+		    	Multiplyer = 2*(i-1);
+		    
+		    }
+		    int elements = 2000*Multiplyer;
+		    int[] array5 = help.getDescendingArray(elements); 
+		    double time = SortType.sort(array5);
+		    System.out.println("Time taken for " + Sort + " to sort the random array " + i + " with "  + elements+ " elements: " + time + " microseconds");
+		    }
+	    for(int i=1; i<7; i++) {
+		    int Multiplyer=(int) Math.pow(i,2);
+		    if(i == 1 ) {
+		    	Multiplyer = 1;
+		    }
+		    else
+		    {
+		    	Multiplyer = 2*(i-1);
+		    
+		    }
+		    int elements = 2000*Multiplyer;
+		    int[] array6 = help.getDupDescendingArray(elements); 
+		    double time = SortType.sort(array6);
+		    System.out.println("Time taken for " + Sort + " to sort the random array " + i + " with "  + elements+ " elements: " + time + " microseconds");
+		    }
 }
 
 public static void main(String args[])
