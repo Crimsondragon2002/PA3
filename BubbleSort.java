@@ -6,7 +6,7 @@
 public class BubbleSort extends Sort {
 
 	
-	StopWatch timer = new StopWatch();
+	
 	 /*
 	 * calls the bubble sort algorthm using an array and the length of the given array
 	 * @param array[] - the array to be sorted
@@ -15,7 +15,7 @@ public class BubbleSort extends Sort {
   	 public long sort(int array[])
 	{
   		int n = array.length;
-  		timer.WatchCheck();
+  		WatchCheck timer = new WatchCheck();
   		bubbleSort(array,n);
    	 	long timeSortBase = timer.timing();
    	 	return timeSortBase;
