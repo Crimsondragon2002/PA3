@@ -1,8 +1,17 @@
+/*
+* Author: Joshua Buscher
+* Project: Programming assignment 3- Complexity and sorting
+* This method creates functions that helps with testing the sorting algorthms, like creating assending and descending arrays, and printing arrays
+/
 import java.util.Arrays;
 import java.util.Collections;
 import java.util.Random;
 
 public class Helper {
+	  /*
+	  * prints a given array
+          *@param array- array to be printed
+	  */
 	  public void printArray(int array[])
 	    {
 	        int n = array.length;
@@ -12,6 +21,11 @@ public class Helper {
 		}
 	        System.out.println();
 	    }
+	 /*
+	 * creats a descending array with no duplicate values
+	 * @param amount- size of array to be made/amount of cycles for creation
+	 * @returns a descending array with no duplicate values
+	 */
 	    public int [] getDescendingArray(int amount) 
 	    {
 	    	
@@ -24,6 +38,11 @@ public class Helper {
 
 	        return decendArr;
 	    }
+	 /*
+	 * creats a descending array with duplicate values
+	 * @param amount- size of array to be made/amount of cycles for creation
+	 *  @returns a descending array with duplicate values
+	 */
 	    public int [] getDupDescendingArray(int amount) 
             {
 	    	
@@ -46,6 +65,11 @@ public class Helper {
 	        }
 	        return descendArr;
 	    }
+	 /*
+	 * creats a ascending array with no duplicate values
+	 * @param amount- size of array to be made/amount of cycles for creation
+	 * @returns a ascending array with no duplicate values
+	 */
 	    public int [] getAscendingArray(int amount) {
 	        int [] ascendArr = new int[amount];
 
@@ -55,6 +79,11 @@ public class Helper {
 
 	        return ascendArr;
 	    }
+	 /*
+	 * creats a ascending array with  duplicate values
+	 * @param amount- size of array to be made/amount of cycles for creation
+	 * @returns a ascending array with duplicate values
+	 */
 	    public int [] getDupAscendingArray(int amount) 
 	   {
 	    	int [] ascendArr = new int[amount];
@@ -76,6 +105,11 @@ public class Helper {
 	    	return ascendArr;	
 	    }
 
+	 /*
+	 * creats a random array with  duplicate values
+	 * @param amount- size of array to be made/amount of cycles for creation
+	 * @returns a random array with duplicate values
+	 */
 	    public int [] getMoreRandomArray(int amount) 
 	    {
 
@@ -108,7 +142,11 @@ public class Helper {
 		       return newRandomArr;
 	    }
 	    
-	      
+	   /*
+	 * creats a random array with no duplicate values
+	 * @param amount- size of array to be made/amount of cycles for creation
+	 * @returns a random array with no duplicate values
+	 */   
 	    public int [] getLessRandomArray(int amount) 
 	   {
 	    	
